@@ -1,0 +1,28 @@
+// Import variables
+@import "common/variables";
+
+// Import vendors
+@import "vendors/foundation";
+@import "~anunatak-helpers/src/sass/anunatheme";
+@import "~font-awesome/scss/font-awesome";
+
+// Import global styles
+@import "common/global";
+
+// Import components
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+
+// Import layouts
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+// Import page styles automagically
+@import "pages/**/*";

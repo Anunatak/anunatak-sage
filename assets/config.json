@@ -1,0 +1,16 @@
+{
+  "entry": {
+    "main": [
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ]
+  },
+  "watch": [
+    "templates/**/*.php",
+    "src/**/*.php"
+  ],
+  "publicPath": "/app/themes/anunatak-sage",
+  "devUrl": "http://bedrock-silk.dev",
+  "proxyUrl": "http://localhost:3000",
+  "cacheBusting": "[name]_[hash:8]"
+}

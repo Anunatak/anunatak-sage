@@ -1,0 +1,44 @@
+{
+  "name": "sage",
+  "version": "9.0.0-beta.1",
+  "author": "Roots <team@roots.io>",
+  "homepage": "https://roots.io/sage/",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roots/sage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roots/sage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "browsersync": "browser-sync start --proxy bedrock-silk.dev --no-open --no-notify --files='dist/**/*.css,dist/**/*.js,templates/**/*.blade.php'",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "engines": {
+    "node": ">= 6.9.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "browsersync-webpack-plugin": "^0.2.0",
+    "import-glob-loader": "^1.1.0",
+    "laravel-mix": "^0.4.0"
+  },
+  "dependencies": {
+    "anunatak-helpers": "^1.0.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.3.0",
+    "jquery": "1.12.4 - 3",
+    "vue": "^2.1.8"
+  }
+}
