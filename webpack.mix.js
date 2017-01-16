@@ -11,6 +11,9 @@ let mix = require('laravel-mix').mix;
  |
  */
 
+/**
+ * Some minor adjustments to the Mix webpack config without losing the vendor config
+ */
 mix.webpackConfig({
   externals: {
     jquery: 'jQuery'
@@ -23,11 +26,20 @@ mix.webpackConfig({
   }
 })
 
+/**
+ * The public path is set to "dist"
+ */
 mix.setPublicPath('dist/');
 
+/**
+ * Compile scripts and version them
+ */
 mix.js('./assets/scripts/main.js', 'dist/scripts/')
    .version();
 
+/**
+ * Compile styles and version them
+ */
 mix.sass('./assets/styles/main.scss', 'dist/styles/')
    .version();
 

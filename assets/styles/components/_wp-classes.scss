@@ -3,56 +3,56 @@
 
 // Media alignment
 .alignnone {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-  height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    height: auto;
 }
 .aligncenter {
-  display: block;
-  @include -zf-breakpoint-value(auto, $grid-column-gutter) {
-    $padding: rem-calc($-zf-bp-value) / 2;
-    margin: $padding auto;
-  }
-  height: auto;
+    display: block;
+    @include -zf-breakpoint-value(auto, $grid-column-gutter) {
+        $padding: rem-calc($-zf-bp-value) / 2;
+        margin: $padding auto;
+    }
+    height: auto;
 }
 .alignleft,
 .alignright {
-  @include -zf-breakpoint-value(auto, $grid-column-gutter) {
-    $padding: rem-calc($-zf-bp-value) / 2;
-    margin-bottom: $padding auto;
-  }
-  height: auto;
+    @include -zf-breakpoint-value(auto, $grid-column-gutter) {
+        $padding: rem-calc($-zf-bp-value) / 2;
+        margin-bottom: $padding auto;
+    }
+    height: auto;
 }
 @include breakpoint(medium) {
-  // Only float if not on an extra small device
-  .alignleft {
-    float: left;
-    @include -zf-breakpoint-value(auto, $grid-column-gutter) {
-      $padding: rem-calc($-zf-bp-value) / 2;
-      margin-right: $padding auto;
-    }
-  }
-  .alignright {
-    float: right;
+    // Only float if not on an extra small device
+    .alignleft {
+        float: left;
+        @include -zf-breakpoint-value(auto, $grid-column-gutter) {
+            $padding: rem-calc($-zf-bp-value) / 2;
+            margin-right: $padding auto;
+        }
+     }
+    .alignright {
+        float: right;
 
-    @include -zf-breakpoint-value(auto, $grid-column-gutter) {
-      $padding: rem-calc($-zf-bp-value) / 2;
-      margin-left: $padding auto;
+        @include -zf-breakpoint-value(auto, $grid-column-gutter) {
+            $padding: rem-calc($-zf-bp-value) / 2;
+            margin-left: $padding auto;
+        }
     }
-  }
 }
 
 // Captions
 .wp-caption {
-  // @extend .figure-img;
-  // @extend .img-fluid;
+    // @extend .figure-img;
+    // @extend .img-fluid;
 }
 .wp-caption-text {
-  // @extend .figure-caption;
+    // @extend .figure-caption;
 }
 
 // Text meant only for screen readers
 .screen-reader-text {
-  @extend .show-for-sr;
+    @extend .show-for-sr;
 }
